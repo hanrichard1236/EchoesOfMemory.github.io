@@ -30,14 +30,15 @@
       position: relative;
     }
 
-    .gallery-item:nth-child(1)  { grid-column: span 8; }
-    .gallery-item:nth-child(2)  { grid-column: span 4; }
+    .gallery-item:nth-child(1)  { grid-column: span 12; }
+    .gallery-item:nth-child(2)  { grid-column: span 12; }
     .gallery-item:nth-child(3)  { grid-column: span 4; }
     .gallery-item:nth-child(4)  { grid-column: span 4; }
     .gallery-item:nth-child(5)  { grid-column: span 4; }
     .gallery-item:nth-child(6)  { grid-column: span 6; }
     .gallery-item:nth-child(7)  { grid-column: span 6; }
-    .gallery-item:nth-child(8)  { grid-column: span 12; }
+    .gallery-item:nth-child(8)  { grid-column: span 6; }
+    .gallery-item:nth-child(9)  { grid-column: span 12; }
 
     .gallery-item img,
     .gallery-item video {
@@ -195,7 +196,8 @@
       .gallery-grid { grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 1rem 3rem; }
       .gallery-item:nth-child(n) { grid-column: span 1; }
       .gallery-item:nth-child(1),
-      .gallery-item:nth-child(8) { grid-column: span 2; }
+      .gallery-item:nth-child(3),
+      .gallery-item:nth-child(9) { grid-column: span 2; }
     }
   </style>
 </head>
@@ -229,57 +231,63 @@
 
       <div class="gallery-item" data-index="0">
         <div class="placeholder-tile">
-          <span>Image 01</span>
+          <img src="env1.PNG" alt="environmentScreenshot1">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Game Environment</span></div>
       </div>
 
       <div class="gallery-item" data-index="1">
+        <div class="placeholder-tile" style="min-height: 320px;">
+          <img src="env2.PNG" alt="environmentScreenshot2">
+        </div>
+        <div class="gallery-overlay"><span class="gallery-caption">Wide Scene</span></div>
+      </div>
+
+      <div class="gallery-item" data-index="2">
         <div class="placeholder-tile">
           <img src="musicBoxScreenshot.png" alt="MusicBoxModel">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Music Box Model</span></div>
       </div>
 
-      <div class="gallery-item" data-index="2">
+      <div class="gallery-item" data-index="3">
         <div class="placeholder-tile">
           <img src="hologramMemory.png" alt="hologramMemoryScreenshot">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Hologram Memory</span></div>
       </div>
 
-      <div class="gallery-item" data-index="3">
+      <div class="gallery-item" data-index="4">
         <div class="placeholder-tile">
           <img src="EOM Poster.png" alt="Poster">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Poster</span></div>
       </div>
 
-      <div class="gallery-item" data-index="4">
+      <div class="gallery-item" data-index="5">
         <div class="placeholder-tile">
           <img src="music_boxes.png" alt="music_boxes">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Music Box Designs</span></div>
       </div>
 
-      <div class="gallery-item" data-index="5">
+      <div class="gallery-item" data-index="6">
         <div class="placeholder-tile">
           <img src="rueDesign.png" alt="rueDesign">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Rue Character Design</span></div>
       </div>
 
-      <div class="gallery-item" data-index="6">
+      <div class="gallery-item" data-index="7">
         <div class="placeholder-tile">
           <img src="2.png" alt="albumCover">
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Sock Monkeys Album Cover v1</span></div>
       </div>
 
-      <div class="gallery-item" data-index="7">
+      <div class="gallery-item" data-index="8">
         <div class="placeholder-tile" style="min-height: 280px;">
           <img src="Untitled_Artwork 11.png" alt="bandPhoto">
-          <span style="font-size: 0.65rem; opacity: 0.6;"></span>
         </div>
         <div class="gallery-overlay"><span class="gallery-caption">Band Photo</span></div>
       </div>
@@ -299,7 +307,7 @@
   </div>
 
   <footer>
-    &copy; 2026 Hindsight &nbsp;&middot;&nbsp; Richard Han, Christina Kwon, and Steven Su
+    &copy; 2025 Hindsight &nbsp;&middot;&nbsp; Capstone Project
   </footer>
 
   <script>
